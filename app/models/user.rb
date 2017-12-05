@@ -12,10 +12,6 @@ class User < ApplicationRecord
         user.email = 'default_emaul@gmail.com'
       end
       user.password = Devise.friendly_token[0,20]
-
-      #user.first_name = "facebook_firs_name_#{auth.uid}"
-      #user.last_name = "facebook_firs_name_#{auth.uid}"
-      binding.pry
     end
   end
 end
